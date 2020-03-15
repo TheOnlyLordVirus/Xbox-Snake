@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="xboxSnake.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:xboxSnake"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid  x:Name="mainBackground" Background="#FF373737">
+        <Grid x:Name="gameMatrix" Margin="0,45,0,0" Width="450" Height="450" HorizontalAlignment="Center" Background="#FF646464" VerticalAlignment="Top">
+        </Grid>
+
+        <!-- Start Game Debug -->
+        <TextBlock x:Name="ScoreTxT" HorizontalAlignment="Left" Margin="80,238,0,0" Text="Score: 0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Foreground="#FFC800FF"/>
+        <Button x:Name="startGame" Content="Start Game" Margin="66,300,0,0" Width="112" Background="#33FF00FF" Click="StartGame_Click" VerticalAlignment="Top"/>
+        <Button x:Name="pauseGame" Content="Pause Game" Margin="65,340,0,0" Width="112" Background="#33FF00FF" Click="PauseGame_Click" VerticalAlignment="Top"/>
+
+        <!-- Direction Debug -->
+        <!--
+        <Button x:Name="upDebug" Content="UP" Margin="97,139,0,0" Width="50" Height="50" Background="#33FF00FF" Click="UpDebug_Click" VerticalAlignment="Top" FontSize="10"/>
+        <Button x:Name="downDebug" Content="DOWN" Margin="97,194,0,0" Width="50" Height="50" Background="#33FF00FF" Click="DownDebug_Click" VerticalAlignment="Top" FontSize="10"/>
+        <Button x:Name="leftDebug" Content="LEFT" Margin="42,194,0,0" Width="50" Height="50" Background="#33FF00FF" Click="LeftDebug_Click" VerticalAlignment="Top" FontSize="10"/>
+        <Button x:Name="rightDebug" Content="RIGHT" Margin="152,194,0,0" Width="50" Height="50" Background="#33FF00FF" Click="RightDebug_Click" VerticalAlignment="Top" FontSize="10"/>
+        -->
+    </Grid>
+</Page>
